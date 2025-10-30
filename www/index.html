@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-//aaaaaaaaaaaaaaaaa
 <html>
 <head>
   <meta charset="utf-8">
@@ -188,8 +187,11 @@
 
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
-        active = false;
-        
+        if(active == true){
+            active = false;
+        }else if(period != 0 && active == false){
+            active = true;
+        }
     }
 
     // ButtonCがクリックされた時の処理
